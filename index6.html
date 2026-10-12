@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#011713">
+    <title>Place an Order — Shaman</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="container">
+            <a href="index.html" class="logo">SHAMAN</a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Delivery</a></li>
+                    <li><a href="index3.html">Prices</a></li>
+                    <li><a href="index4.html">Hours</a></li>
+                    <li><a href="index5.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="order-layout">
+
+                <div class="order-intro">
+                    <span class="eyebrow">SHAMAN DELIVERY</span>
+
+                    <h1>Your order.<br><span>Your delivery.</span></h1>
+
+                    <p class="intro-text">
+                        Fill out the form, choose a store, and tell us
+                        what you need. We will receive your order details.
+                    </p>
+
+                    <div class="benefit">
+                        <span class="benefit-icon">01</span>
+                        <div>
+                            <h3>Enter your details</h3>
+                            <p>Your name, room number, and phone number.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span class="benefit-icon">02</span>
+                        <div>
+                            <h3>Choose a store</h3>
+                            <p>Select the store you want your shopping from.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span class="benefit-icon">03</span>
+                        <div>
+                            <h3>Describe your order</h3>
+                            <p>List the items you need and their quantities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="order-card">
+                    <div class="card-heading">
+                        <div>
+                            <span class="step-label">ORDER FORM</span>
+                            <h2>Place an Order</h2>
+                        </div>
+                        <span class="status-dot" aria-hidden="true"></span>
+                    </div>
+
+                    <p class="card-description">
+                        Please fill in all fields marked with an asterisk.
+                    </p>
+
+                    <form
+                        action="https://formspree.io/f/xvkgkzad"
+                        method="POST"
+                    >
+                        <div class="field">
+                            <label for="name">Your name <span>*</span></label>
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                placeholder="For example, Alexander"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="room">Room number <span>*</span></label>
+                            <input
+                                id="room"
+                                type="text"
+                                name="room_number"
+                                placeholder="For example, 204"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone number <span>*</span></label>
+                            <input
+                                id="phone"
+                                type="tel"
+                                name="phone"
+                                placeholder="For example, +48 000 000 000"
+                                autocomplete="tel"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="shop">Store <span>*</span></label>
+                            <select id="shop" name="shop" required>
+                                <option value="" disabled selected>
+                                    Choose a store
+                                </option>
+                                <option value="Intermarche">Intermarche</option>
+                                <option value="Kaufland">Kaufland</option>
+                                <option value="Dino">Dino</option>
+                                <option value="Centrum Liia">Centrum Liia</option>
+                                <option value="Dealz">Dealz</option>
+                                <option value="Biedronka">Biedronka</option>
+                                <option value="Zabka">Żabka</option>
+                                <option value="AZS Kompan">AZS Kompan</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="order">What would you like to order? <span>*</span></label>
+                            <textarea
+                                id="order"
+                                name="order"
+                                rows="5"
+                                placeholder="For example:
+1. Milk — 2 cartons
+2. Bread — 1 loaf
+3. Water — 3 bottles"
+                                required
+                            ></textarea>
+                            <span class="field-hint">
+                                List the items, quantities, and any special requests.
+                            </span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Submit Order</span>
+                            <span class="button-arrow" aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="form-note">
+                            Please check your details before submitting.
+                        </p>
+                    </form>
+                </section>
+            </section>
+
+            <aside class="payment-note">
+                <span class="payment-icon" aria-hidden="true">i</span>
+                <div>
+                    <h3>Payment Information</h3>
+                    <p>
+                        Payment must be made to the card using the reference:
+                        <strong>"Dostawa zakupow - Date"</strong>.
+                    </p>
+                </div>
+            </aside>
+
+            <footer class="footer">
+                <a href="index.html" class="footer-logo">SHAMAN</a>
+                <p>Grocery Delivery Orders</p>
+            </footer>
+        </main>
+
+    </div>
+</body>
+</html>
+
